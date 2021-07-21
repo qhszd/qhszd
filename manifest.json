@@ -1,14 +1,14 @@
 {
-  "name": "小邵同学的Pages ",
-  "short_name": "小邵同学的Pages ",
-  "start_url": "/qhszd/",
-  "scope": "/qhszd/",
+  "name": "小邵同学的Pages",
+  "short_name": "小邵同学的Pages",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/qhszd/favicon.svg",
+      "src": "/favicon.svg",
       "sizes": "512x512"
     }
   ]
