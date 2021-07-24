@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on 小邵同学的Pages</title><link>https://blog.shaozhd.xyz/docs/</link><description>Recent content in Docs on 小邵同学的Pages</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://blog.shaozhd.xyz/docs/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://blog.shaozhd.xyz/docs/things/blog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shaozhd.xyz/docs/things/blog/</guid><description>我的Blog搭建之法(一) # 作为本blog的首篇文章，就在此记录一下搭建这篇blog的过程，希望可以帮到各位同志！
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on 小邵同学的 Pages</title><link>https://blog.shaozhd.xyz/docs/</link><description>Recent content in Docs on 小邵同学的 Pages</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://blog.shaozhd.xyz/docs/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://blog.shaozhd.xyz/docs/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shaozhd.xyz/docs/about/</guid><description>关于小邵 #</description></item><item><title/><link>https://blog.shaozhd.xyz/docs/Things/Blog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shaozhd.xyz/docs/Things/Blog/</guid><description>我的Blog搭建之法(一) # 作为本blog的首篇文章，就在此记录一下搭建这篇blog的过程，希望可以帮到各位同志！
 ⚠️注：本篇博客的全部内容均在 macOS Big Sur 和 Ubuntu 18.04 LTS 系统中测试，并未实际在 Windows 系统下实现，小邵同学建议大家尽量使用 Linux 系统 进行博客的搭建工作，相信这会大大减少搭建过程与后期维护过程的工作量.
 一、为什么要搭建blog？ # 早在大二上（2020学年第一学期）软件工程导论课程中，余阳和潘茂林老师就已经向我们强调过：作为一名“合格的”程序员，学会搭建并将撰写blog作为习惯是十分重要的. 在这门课中我们也学习了搭建blog的方法，并通过该blog上交本门课程的作业.
-但是当时搭建的博客并不完备，仅用于作业上交之用途，搭建过程也十分潦草，并不能实际用于博客发布. 再者，经过设备的更新代换，博客源码未做备份，已经遗失，仅剩网站文件于gitee，故而弃之.
+但是当时搭建的博客并不完备，仅用于作业上交之用途，搭建过程也十分潦草，并不能实际用于博客发布. 再者，经过设备的更新代换，博客源码未做备份，已经遗失，仅剩网站文件于 gitee，故而弃之.
 今学期（2020学年第二学期）操作系统课程，蒙蔡国扬老师教诲，自觉应该建起本篇博客，培养一下凡事写博客的习惯，于是图得假期之空，于 GitHub 搭建本博客，同时也将搭建过程记录于此.
 二、为什么用GitHub而不是Gitee？ # 当我进入后者准备搭建时，发现Gitee的Pages服务不能使用了：
 冇计啦，只能翻山越岭上GitHub. （SYSU-SECURE可以访问GitHub还是蛮不错的，虽然也经常性地无法访问）
@@ -15,5 +15,4 @@ Markdown简介 Markdown Markdown是一种轻量级标记语言，创始人为约
 一般来说，博客只有两个用途：
 软件工程专业导论的作业上交（手动滑稽） 记录自己的学习、生活，整理笔记、报告，为其他人提供帮助 如果只是为了上交作业，那么我们只需要最简单的博客搭建基础就好，这一部分我会放在下面的正式开始章节.
 如果我们的目的是为了搭建一个完整、易用、易读且稳定的博客，我将域名申请与使用、证书申请和图床的搭建等进阶内容放在了下一篇文章我的Blog搭建之法(二)中，对于博客的进一步完善有兴趣的同志可作参考.
-下面，就让我们正式开始吧！
-四、正式开始 # 首先，我们不要急于直接实现网络中的博客，我们应该考虑如何首先在本地将博客搭建起来.</description></item></channel></rss>
+下面，就让我们正式开始吧！</description></item></channel></rss>
