@@ -2,7 +2,7 @@
 headless: true
 ---
 
-- [**Example Site**]({{< relref "/docs/example" >}})
+<!-- - [**Example Site**]({{< relref "/docs/example" >}})
 - [Table of Contents]({{< relref "/docs/example/table-of-contents" >}})
   - [With ToC]({{< relref "/docs/example/table-of-contents/with-toc" >}})
   - [Without ToC]({{< relref "/docs/example/table-of-contents/without-toc" >}})
@@ -19,4 +19,11 @@ headless: true
 - [Katex]({{< relref "/docs/shortcodes/katex" >}})
 - [Mermaid]({{< relref "/docs/shortcodes/mermaid" >}})
 - [Tabs]({{< relref "/docs/shortcodes/tabs" >}})
-<br />
+<br /> -->
+
+- **👇目录 CONTENT👇**
+- 一、笔记报告部分
+- 二、其他笔记
+- 三、自己鼓捣的小玩意儿
+  - [我的Blog搭建(一)]({{< relref "/docs/things/blog" >}})
+- [关于小邵]({{< relref "/docs/about" >}})
