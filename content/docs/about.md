@@ -21,4 +21,4 @@
 
 **通讯地址**：广东省广州市番禺区大学城(小谷围街道)外环东路132号中山大学生活区至善园7号
 
-**电邮地址**：<qhszd@protonmail.com>, <shaozhd@mail2.sysu.edu.cn>
+**电邮地址**：<qhszd@protonmail.com>, <shaozhd@mail2.sysu.edu.cn>, <shaozhd@st.btbu.edu.cn>
