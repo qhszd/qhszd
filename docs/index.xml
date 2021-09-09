@@ -4,6 +4,7 @@
 联系方式 # 通讯地址：广东省广州市番禺区大学城(小谷围街道)外环东路132号中山大学生活区至善园7号
 电邮地址：qhszd@protonmail.com, shaozhd@mail2.sysu.edu.cn, shaozhd@st.btbu.edu.cn</description></item><item><title/><link>https://blog.shaozhd.com/docs/things/blog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shaozhd.com/docs/things/blog/</guid><description>我的Blog搭建(一) # 2021年9月9日更新
 GitHub 还是需要科学上网才可以访问，大家可以用文中的办法使用GitHub.
+另外 Gitee 的 Pages 服务已经重新上线了，上传验证实名信息后可以使用. Gitee 的操作和 GitHub 大同小异，大家可以自行探索一下.
 2021年8月3日更新
 最近一段时间的 GitHub 没有被墙，可以直接访问，正好方便大家使用 GitHub Pages 服务建站.
 作为本blog的首篇文章，就在此记录一下搭建这篇blog的过程，希望可以帮到各位同志！
@@ -16,6 +17,4 @@ GitHub 还是需要科学上网才可以访问，大家可以用文中的办法�
 PS：GitHub主页的大地球是可以拖动的！超棒！
 三、准备工作 # (一)、Markdown基础 # 要同人说话，我们学会了中文、英文这些自然语言以与人交流；要写程序，我们则学习了C、C++、Python等编程语言同机器交流；那么要写博客，也需要掌握一门专属于文档撰写的语言.
 这就是：Markdown.
-Markdown简介 Markdown Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯。它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。
-维基百科：Markdown
-关于MarkDown的具体用法，可以参考 @LearnShare 发布的 Learning-Markdown. 考虑到本文主要介绍的是博客的搭建方法，关于Markdown的相关知识这里不再赘述.</description></item><item><title/><link>https://blog.shaozhd.com/docs/things/server/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shaozhd.com/docs/things/server/</guid><description>拥有一台云服务器可以做什么有趣的事情？ #</description></item></channel></rss>
+Markdown简介 Markdown Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯。它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。</description></item><item><title/><link>https://blog.shaozhd.com/docs/things/server/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shaozhd.com/docs/things/server/</guid><description>拥有一台云服务器可以做什么有趣的事情？ #</description></item></channel></rss>
