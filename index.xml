@@ -32,6 +32,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 Lorem markdownum insigne. Olympo signis Delphis!</description></item><item><title/><link>https://blog.shaozhd.com/docs/things/blog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shaozhd.com/docs/things/blog/</guid><description>我的Blog搭建(一) # 2021年9月9日更新
 GitHub 还是需要科学上网才可以访问，大家可以用文中的办法使用GitHub.
 另外 Gitee 的 Pages 服务已经重新上线了，上传验证实名信息后可以使用. Gitee 的操作和 GitHub 大同小异，大家可以自行探索一下.
+如果有今后使用自己独立域名的打算，还是建议将网站搭建在 GitHub 中，Gitee 的 Pages 服务似乎是不支持自定义域名的.
 2021年8月3日更新
 最近一段时间的 GitHub 没有被墙，可以直接访问，正好方便大家使用 GitHub Pages 服务建站.
 作为本blog的首篇文章，就在此记录一下搭建这篇blog的过程，希望可以帮到各位同志！
@@ -42,6 +43,4 @@ GitHub 还是需要科学上网才可以访问，大家可以用文中的办法�
 二、为什么用GitHub而不是Gitee？ # 当我进入后者准备搭建时，发现Gitee的Pages服务不能使用了：
 冇计啦，只能翻山越岭上GitHub. （SYSU-SECURE可以访问GitHub还是蛮不错的，虽然也经常性地无法访问）
 PS：GitHub主页的大地球是可以拖动的！超棒！
-三、准备工作 # (一)、Markdown基础 # 要同人说话，我们学会了中文、英文这些自然语言以与人交流；要写程序，我们则学习了C、C++、Python等编程语言同机器交流；那么要写博客，也需要掌握一门专属于文档撰写的语言.
-这就是：Markdown.
-Markdown简介 Markdown Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯。它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。</description></item><item><title/><link>https://blog.shaozhd.com/docs/things/server/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shaozhd.com/docs/things/server/</guid><description>拥有一台云服务器可以做什么有趣的事情？ #</description></item></channel></rss>
+三、准备工作 # (一)、Markdown基础 # 要同人说话，我们学会了中文、英文这些自然语言以与人交流；要写程序，我们则学习了C、C++、Python等编程语言同机器交流；那么要写博客，也需要掌握一门专属于文档撰写的语言.</description></item><item><title/><link>https://blog.shaozhd.com/docs/things/server/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shaozhd.com/docs/things/server/</guid><description>拥有一台云服务器可以做什么有趣的事情？ #</description></item></channel></rss>
