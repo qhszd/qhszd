@@ -2,8 +2,10 @@
 哲学？？ # 除了计算机的学习外，我还对马克思主义理论兴趣十足，马克思主义哲学以辩证唯物主义这个正确的世界观看待现实世界，马克思主义政治经济学揭示了资本丑恶的本质，而科学社会主义则为当代世界提出了一个更好的解决方法：实现共产主义。在为共产主义事业不懈奋斗的伟业中，才是我们自身理想和人生价值得以实现之所。如果有志同道合的同志希望一起探讨、学习马克思主义，我非常欢迎也十分荣幸能取得你的联系。
 一起奋斗！！！ # 他叫你们去读书， 他说你们是太阳， 他说年轻人有希望， 他说你们就是他。
 联系方式 # 通讯地址：广东省广州市番禺区大学城(小谷围街道)外环东路132号中山大学生活区至善园7号
-电邮地址：qhszd@protonmail.com, shaozhd@mail2.sysu.edu.cn</description></item><item><title/><link>https://blog.shaozhd.com/docs/things/blog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shaozhd.com/docs/things/blog/</guid><description>我的Blog搭建(一) # 2021年8月3日更新
-最近一段时间的 GitHub 没有被墙，可以直接访问，正好方便大家使用 GitHub Pages 服务建站。
+电邮地址：qhszd@protonmail.com, shaozhd@mail2.sysu.edu.cn</description></item><item><title/><link>https://blog.shaozhd.com/docs/things/blog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shaozhd.com/docs/things/blog/</guid><description>我的Blog搭建(一) # 2021年9月9日更新
+GitHub 还是需要科学上网才可以访问，大家可以用文中的办法使用GitHub.
+2021年8月3日更新
+最近一段时间的 GitHub 没有被墙，可以直接访问，正好方便大家使用 GitHub Pages 服务建站.
 作为本blog的首篇文章，就在此记录一下搭建这篇blog的过程，希望可以帮到各位同志！
 ⚠️注：本篇博客的全部内容均在 macOS Big Sur 和 Ubuntu 18.04 LTS 系统中测试，并未实际在 Windows 系统下实现，小邵同学建议大家尽量使用 Linux 系统 进行博客的搭建工作，相信这会大大减少搭建过程与后期维护过程的工作量.
 一、为什么要搭建blog？ # 早在大二上（2020学年第一学期）软件工程导论课程中，余阳和潘茂林老师就已经向我们强调过：作为一名“合格的”程序员，学会搭建并将撰写blog作为习惯是十分重要的. 在这门课中我们也学习了搭建blog的方法，并通过该blog上交本门课程的作业.
@@ -11,10 +13,9 @@
 今学期（2020学年第二学期）操作系统课程，蒙蔡国扬老师教诲，自觉应该建起本篇博客，培养一下凡事写博客的习惯，于是图得假期之空，于 GitHub 搭建本博客，同时也将搭建过程记录于此.
 二、为什么用GitHub而不是Gitee？ # 当我进入后者准备搭建时，发现Gitee的Pages服务不能使用了：
 冇计啦，只能翻山越岭上GitHub. （SYSU-SECURE可以访问GitHub还是蛮不错的，虽然也经常性地无法访问）
-PS：GitHub主页的大地球是可以拖动的！感觉超棒！
+PS：GitHub主页的大地球是可以拖动的！超棒！
 三、准备工作 # (一)、Markdown基础 # 要同人说话，我们学会了中文、英文这些自然语言以与人交流；要写程序，我们则学习了C、C++、Python等编程语言同机器交流；那么要写博客，也需要掌握一门专属于文档撰写的语言.
 这就是：Markdown.
 Markdown简介 Markdown Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯。它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。
 维基百科：Markdown
-关于MarkDown的具体用法，可以参考 @LearnShare 发布的 Learning-Markdown. 感谢这位同志的整理，考虑到本文主要介绍的是博客的搭建方法，关于Markdown的相关知识这里不再赘述.
-(二)、确定目标 # 有了Markdown这个得力工具，是时候该真正考虑我们搭建博客的目的了. 只有确定了目的，我们才能搭建出最符合我们要求的博客。</description></item><item><title/><link>https://blog.shaozhd.com/docs/things/server/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shaozhd.com/docs/things/server/</guid><description>拥有一台云服务器可以做什么有趣的事情？ #</description></item></channel></rss>
+关于MarkDown的具体用法，可以参考 @LearnShare 发布的 Learning-Markdown. 考虑到本文主要介绍的是博客的搭建方法，关于Markdown的相关知识这里不再赘述.</description></item><item><title/><link>https://blog.shaozhd.com/docs/things/server/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shaozhd.com/docs/things/server/</guid><description>拥有一台云服务器可以做什么有趣的事情？ #</description></item></channel></rss>
