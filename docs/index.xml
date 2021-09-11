@@ -16,4 +16,12 @@ GitHub 还是需要科学上网才可以访问，大家可以用文中的办法�
 二、为什么用GitHub而不是Gitee？ # 当我进入后者准备搭建时，发现Gitee的Pages服务不能使用了：
 冇计啦，只能翻山越岭上GitHub. （SYSU-SECURE可以访问GitHub还是蛮不错的，虽然也经常性地无法访问）
 PS：GitHub主页的大地球是可以拖动的！超棒！
-三、准备工作 # (一)、Markdown基础 # 要同人说话，我们学会了中文、英文这些自然语言以与人交流；要写程序，我们则学习了C、C++、Python等编程语言同机器交流；那么要写博客，也需要掌握一门专属于文档撰写的语言.</description></item><item><title/><link>https://blog.shaozhd.com/docs/things/server/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shaozhd.com/docs/things/server/</guid><description>拥有一台云服务器可以做什么有趣的事情？ #</description></item></channel></rss>
+三、准备工作 # (一)、Markdown基础 # 要同人说话，我们学会了中文、英文这些自然语言以与人交流；要写程序，我们则学习了C、C++、Python等编程语言同机器交流；那么要写博客，也需要掌握一门专属于文档撰写的语言.</description></item><item><title/><link>https://blog.shaozhd.com/docs/things/server/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shaozhd.com/docs/things/server/</guid><description>拥有一台云服务器可以做什么有趣的事情？ #</description></item><item><title/><link>https://blog.shaozhd.com/docs/things/vps/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shaozhd.com/docs/things/vps/</guid><description>快来白嫖一年的科学冲浪服务器(VPS) # 一直在用的 GoogleHelper 最近要过期了，本来是想继续拉着舍友们一起续费的，想了一下，只能在支持扩展程序的浏览器上使用(比如Chrome、Microsoft Edge等)还是很不方便的，而且它也没有给出移动端搭梯的解决方案，探索了一下，找到了用VPS科学冲浪的办法。
+⚠️注意：如果希望享受学生白嫖优惠，你需要有一张安全的、开通了外币 (美元) 交易的、额度至少有 1 美🔪 (即人民币至少 7 元) 的信用卡，银联维萨万事达均可. 注册 DigitalOcean 会扣除 1 美元来验证账号，验证完毕后会退回卡中. (经测试，一些网站提供的美国虚拟预付费信用卡会封禁账号，无法使用)
+当然，如果没有信用卡可以用，你也可以选择使用 PayPal 充值 5 刀，被封号的风险也会比绑定银行卡小一些.
+如果你不差钱，可以直接购买其他服务器提供商如搬瓦工 (Bandwagon) 等的服务器使用.
+另外，事实上在搭建的一些过程中是需要能够科学冲浪的，大家可以使用邮箱注册一个 GoogleHelper 账号，可以获得三天 (？不记得了，也可能是一天) 的体验期. 如果在任意一个环节遇到困难，请联系我.
+一、什么是VPS？什么又是V2Ray？ # (一)、VPS # 这一部分是虚拟专用服务器的简单介绍，如果你已经拥有了一台具有海外 IP 地址 (可以在国内 ping 通) 的 VPS 服务器，那么可以选择跳过，直接来到第四步.
+VPS 可以理解为在一台服务器主机上安装了若干个虚拟机，每个虚拟机之间都是相互独立、互不影响的。实际上买一台 VPS 就是买一台云服务器。
+VPS 简介 虚拟专用服务器（英语：Virtual Private Server），是将一台服务器分割成多个虚拟专用服务器的服务。实现 VPS 的技术分为容器技术和虚拟机技术。
+在容器或虚拟机中，每个 VPS 都可分配独立公网 IP 地址、独立操作系统、实现不同 VPS 间磁盘空间、内存、CPU 资源、进程和系统配置的隔离，为用户和应用程序模拟出“独占”使用计算资源的体验。</description></item></channel></rss>
