@@ -2,8 +2,10 @@
 哲学？？ # 除了计算机的学习外，我还对马克思主义理论兴趣十足，马克思主义哲学以辩证唯物主义这个正确的世界观看待现实世界，马克思主义政治经济学揭示了资本丑恶的本质，而科学社会主义则为当代世界提出了一个更好的解决方法：实现共产主义。在为共产主义事业不懈奋斗的伟业中，才是我们自身理想和人生价值得以实现之所。如果有志同道合的同志希望一起探讨、学习马克思主义，我非常欢迎也十分荣幸能取得你的联系。
 一起奋斗！！！ # 他叫你们去读书， 他说你们是太阳， 他说年轻人有希望， 他说你们就是他。
 联系方式 # 通讯地址：广东省广州市番禺区大学城(小谷围街道)外环东路132号中山大学生活区至善园7号
-电邮地址： qhszd@protonmail.com, shaozhd@mail2.sysu.edu.cn, shaozhd@st.btbu.edu.cn</description></item><item><title/><link>https://blog.shaozhd.com/docs/reports/mosad/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shaozhd.com/docs/reports/mosad/</guid><description>中山大学 现代操作系统应用开发 郑贵峰 # 本页面是中山大学现代操作系统课程作业报告的目录.
-作业1:创建第一个XCode项目、面向对象与Objective-C语法学习</description></item><item><title/><link>https://blog.shaozhd.com/docs/things/blog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shaozhd.com/docs/things/blog/</guid><description>我的Blog搭建(一) # 2021年9月9日更新
+电邮地址： qhszd@protonmail.com, shaozhd@mail2.sysu.edu.cn, shaozhd@st.btbu.edu.cn</description></item><item><title/><link>https://blog.shaozhd.com/docs/reports/mosad/content/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shaozhd.com/docs/reports/mosad/content/</guid><description>中山大学 现代操作系统应用开发 郑贵峰 # 本页面是中山大学现代操作系统课程作业报告的目录.
+作业1：创建第一个XCode项目、面向对象与Objective-C语法学习</description></item><item><title/><link>https://blog.shaozhd.com/docs/reports/mosad/hw1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shaozhd.com/docs/reports/mosad/hw1/</guid><description>现代操作系统应用开发 作业1 # 姓名：邵震东 # 学号：19335172 # 一、安装配置 macOS 和 Xcode # 本次实验使用 MacBook Air on Apple Silicon 完成，系统版本为 macOS Big Sur 11.5.2，Xcode 版本为 12.5.1.
+二、熟悉 macOS 按键操作 # macOS 拷贝、粘贴等操作使用 ⌘(command) 按键代替 Windows 中的 ctrl 键，切换中英文输入法则使用 caps lock 按键或 fn 按键.
+三、编译运行第一个 Xcode 项目 # 根据 tutorial 中的指引，需要注意的是在 Info.plist 中不但要删除 Main StoryBoard base file name，同时也要删除 Application Scene Manifest &amp;gt; Scene Configuration &amp;gt; Application Session Role &amp;gt; Item 0 &amp;gt; StoryBoard Name，才可以最终成功编译.</description></item><item><title/><link>https://blog.shaozhd.com/docs/things/blog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shaozhd.com/docs/things/blog/</guid><description>我的Blog搭建(一) # 2021年9月9日更新
 GitHub 还是需要科学上网才可以访问，大家可以用文中的办法使用GitHub.
 另外 Gitee 的 Pages 服务已经重新上线了，上传验证实名信息后可以使用. Gitee 的操作和 GitHub 大同小异，大家可以自行探索一下.
 如果有今后使用自己独立域名的打算，还是建议将网站搭建在 GitHub 中，Gitee 的 Pages 服务似乎是不支持自定义域名的.

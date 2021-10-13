@@ -1,0 +1,335 @@
+<!doctype html><html lang=en dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="现代操作系统应用开发 作业1 #  姓名：邵震东 #  学号：19335172 #  一、安装配置 macOS 和 Xcode #  本次实验使用 MacBook Air on Apple Silicon 完成，系统版本为 macOS Big Sur 11.5.2，Xcode 版本为 12.5.1.
+二、熟悉 macOS 按键操作 #  macOS 拷贝、粘贴等操作使用 ⌘(command) 按键代替 Windows 中的 ctrl 键，切换中英文输入法则使用 caps lock 按键或 fn 按键.
+三、编译运行第一个 Xcode 项目 #  根据 tutorial 中的指引，需要注意的是在 Info.plist 中不但要删除 Main StoryBoard base file name，同时也要删除 Application Scene Manifest > Scene Configuration > Application Session Role > Item 0 > StoryBoard Name，才可以最终成功编译.">
+<meta name=theme-color content="#FFFFFF"><meta property="og:title" content>
+<meta property="og:description" content="现代操作系统应用开发 作业1 #  姓名：邵震东 #  学号：19335172 #  一、安装配置 macOS 和 Xcode #  本次实验使用 MacBook Air on Apple Silicon 完成，系统版本为 macOS Big Sur 11.5.2，Xcode 版本为 12.5.1.
+二、熟悉 macOS 按键操作 #  macOS 拷贝、粘贴等操作使用 ⌘(command) 按键代替 Windows 中的 ctrl 键，切换中英文输入法则使用 caps lock 按键或 fn 按键.
+三、编译运行第一个 Xcode 项目 #  根据 tutorial 中的指引，需要注意的是在 Info.plist 中不但要删除 Main StoryBoard base file name，同时也要删除 Application Scene Manifest > Scene Configuration > Application Session Role > Item 0 > StoryBoard Name，才可以最终成功编译.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://blog.shaozhd.com/docs/reports/mosad/hw1/"><meta property="article:section" content="docs">
+<title>Hw1 | 小邵同学的 Pages</title>
+<link rel=manifest href=/manifest.json>
+<link rel=icon href=/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/book.min.57f7f660871517a5bfcfb5e2de853d806f7e34d94ebd5f3f3bad62e9ddbae209.css integrity="sha256-V/f2YIcVF6W/z7Xi3oU9gG9+NNlOvV8/O61i6d264gk=" crossorigin=anonymous>
+<script defer src=/flexsearch.min.js></script>
+<script defer src=/en.search.min.a3030696a67591aae2c921b1449bb6ad731b469c58cef37713b7f4712d2f932e.js integrity="sha256-owMGlqZ1kariySGxRJu2rXMbRpxYzvN3E7f0cS0vky4=" crossorigin=anonymous></script>
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a href=/><span>小邵同学的 Pages</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul>
+<li><strong>👇目录 CONTENT👇</strong></li>
+<li>一、笔记报告部分
+<ul>
+<li>
+<a href=/docs/reports/mosad/content/>现代操作系统应用开发 郑贵峰</a></li>
+</ul>
+</li>
+<li>二、其他笔记</li>
+<li>三、自己鼓捣的小玩意儿
+<ul>
+<li>
+<a href=/docs/things/blog/>我的Blog搭建(一)</a></li>
+<li>
+<a href=/docs/things/vps/>快来白嫖一年的科学冲浪服务器(VPS)</a></li>
+</ul>
+</li>
+<li>
+<a href=/docs/about/>关于小邵</a></li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>Hw1</strong>
+<label for=toc-control>
+<img src=/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#现代操作系统应用开发-作业1><strong>现代操作系统应用开发 作业1</strong></a>
+<ul>
+<li>
+<ul>
+<li><a href=#姓名邵震东>姓名：邵震东</a></li>
+<li><a href=#学号19335172>学号：19335172</a></li>
+</ul>
+</li>
+<li><a href=#一安装配置-macos-和-xcode><strong>一、安装配置 macOS 和 Xcode</strong></a></li>
+<li><a href=#二熟悉-macos-按键操作><strong>二、熟悉 macOS 按键操作</strong></a></li>
+<li><a href=#三编译运行第一个-xcode-项目><strong>三、编译运行第一个 Xcode 项目</strong></a></li>
+<li><a href=#四实践项目><strong>四、实践项目</strong></a>
+<ul>
+<li><a href=#一设计建模><strong>(一)、设计建模</strong></a></li>
+<li><a href=#二代码实现><strong>(二)、代码实现</strong></a></li>
+<li><a href=#三结果输出><strong>(三)、结果输出</strong></a></li>
+</ul>
+</li>
+<li><a href=#四实验心得><strong>四、实验心得</strong></a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</aside>
+</header>
+<article class=markdown><h1 id=现代操作系统应用开发-作业1>
+<strong>现代操作系统应用开发 作业1</strong>
+<a class=anchor href=#%e7%8e%b0%e4%bb%a3%e6%93%8d%e4%bd%9c%e7%b3%bb%e7%bb%9f%e5%ba%94%e7%94%a8%e5%bc%80%e5%8f%91-%e4%bd%9c%e4%b8%9a1>#</a>
+</h1>
+<h3 id=姓名邵震东>
+姓名：邵震东
+<a class=anchor href=#%e5%a7%93%e5%90%8d%e9%82%b5%e9%9c%87%e4%b8%9c>#</a>
+</h3>
+<h3 id=学号19335172>
+学号：19335172
+<a class=anchor href=#%e5%ad%a6%e5%8f%b719335172>#</a>
+</h3>
+<h2 id=一安装配置-macos-和-xcode>
+<strong>一、安装配置 macOS 和 Xcode</strong>
+<a class=anchor href=#%e4%b8%80%e5%ae%89%e8%a3%85%e9%85%8d%e7%bd%ae-macos-%e5%92%8c-xcode>#</a>
+</h2>
+<p>本次实验使用 MacBook Air on Apple Silicon 完成，系统版本为 macOS Big Sur 11.5.2，Xcode 版本为 12.5.1.</p>
+<h2 id=二熟悉-macos-按键操作>
+<strong>二、熟悉 macOS 按键操作</strong>
+<a class=anchor href=#%e4%ba%8c%e7%86%9f%e6%82%89-macos-%e6%8c%89%e9%94%ae%e6%93%8d%e4%bd%9c>#</a>
+</h2>
+<p>macOS 拷贝、粘贴等操作使用 ⌘(command) 按键代替 Windows 中的 ctrl 键，切换中英文输入法则使用 caps lock 按键或 fn 按键.</p>
+<h2 id=三编译运行第一个-xcode-项目>
+<strong>三、编译运行第一个 Xcode 项目</strong>
+<a class=anchor href=#%e4%b8%89%e7%bc%96%e8%af%91%e8%bf%90%e8%a1%8c%e7%ac%ac%e4%b8%80%e4%b8%aa-xcode-%e9%a1%b9%e7%9b%ae>#</a>
+</h2>
+<p>根据 tutorial 中的指引，需要注意的是在 Info.plist 中不但要删除 <code>Main StoryBoard base file name</code>，同时也要删除 <code>Application Scene Manifest</code> > <code>Scene Configuration</code> > <code>Application Session Role</code> > <code>Item 0</code> > <code>StoryBoard Name</code>，才可以最终成功编译.</p>
+<p>我们将 tutorial 中的代码放在项目中的相应位置.</p>
+<p><code>AppDelegate.m</code></p>
+<p><img src=https://mypicbank.oss-cn-beijing.aliyuncs.com/uPic/mosad_hw1_AppDelegate_m.png alt=AppDelegate_m style=zoom:50%></p>
+<p><code>ViewController.m</code></p>
+<p><img src=https://mypicbank.oss-cn-beijing.aliyuncs.com/uPic/mosad_hw1_ViewController_m.png alt=ViewController_m style=zoom:50%></p>
+<p>同时，我们需要在 <code>AppDelegate.h</code> 中添加一行：</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-objective-c data-lang=objective-c><span style=color:#66d9ef>@property</span> (<span style=color:#66d9ef>nonatomic</span>, <span style=color:#66d9ef>strong</span>) UIWindow <span style=color:#f92672>*</span> window;
+</code></pre></div><p>这样，就可以成功编译了.</p>
+<p>可以看到 Simulator 中启动程序后屏幕变暗，Xcode 中产生输出.</p>
+<p><img src=https://mypicbank.oss-cn-beijing.aliyuncs.com/uPic/mosad_hw1_Simulator.png alt=Simulator style=zoom:50%></p>
+<p><img src=https://mypicbank.oss-cn-beijing.aliyuncs.com/uPic/mosad_hw1_Output.png alt=Output style=zoom:50%></p>
+<h2 id=四实践项目>
+<strong>四、实践项目</strong>
+<a class=anchor href=#%e5%9b%9b%e5%ae%9e%e8%b7%b5%e9%a1%b9%e7%9b%ae>#</a>
+</h2>
+<h3 id=一设计建模>
+<strong>(一)、设计建模</strong>
+<a class=anchor href=#%e4%b8%80%e8%ae%be%e8%ae%a1%e5%bb%ba%e6%a8%a1>#</a>
+</h3>
+<p>在这个问题中，我们令 N = 4， M = 5.</p>
+<p>衣服颜色有：</p>
+<p>白色 (White)、黑色 (Black)、蓝色 (Blue) 和红色 (Red).</p>
+<p>裤子则有：</p>
+<p>白色 (White)、黑色 (Black)、红色 (Red)、绿色 (Green) 和棕色 (Brown).</p>
+<p>设计各种搭配的得分如下：</p>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>上衣 / 得分 / 裤子</th>
+<th style=text-align:center>白色 (White)</th>
+<th style=text-align:center>黑色 (Black)</th>
+<th style=text-align:center>红色 (Red)</th>
+<th style=text-align:center>绿色 (Green)</th>
+<th style=text-align:center>棕色 (Brown)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left>白色 (White)</td>
+<td style=text-align:center>10</td>
+<td style=text-align:center>11</td>
+<td style=text-align:center>12</td>
+<td style=text-align:center>13</td>
+<td style=text-align:center>14</td>
+</tr>
+<tr>
+<td style=text-align:left>黑色 (Black)</td>
+<td style=text-align:center>15</td>
+<td style=text-align:center>16</td>
+<td style=text-align:center>17</td>
+<td style=text-align:center>18</td>
+<td style=text-align:center>19</td>
+</tr>
+<tr>
+<td style=text-align:left>蓝色 (Blue)</td>
+<td style=text-align:center>20</td>
+<td style=text-align:center>21</td>
+<td style=text-align:center>22</td>
+<td style=text-align:center>23</td>
+<td style=text-align:center>24</td>
+</tr>
+<tr>
+<td style=text-align:left>红色 (Red)</td>
+<td style=text-align:center>25</td>
+<td style=text-align:center>26</td>
+<td style=text-align:center>27</td>
+<td style=text-align:center>0</td>
+<td style=text-align:center>28</td>
+</tr>
+</tbody>
+</table>
+<h3 id=二代码实现>
+<strong>(二)、代码实现</strong>
+<a class=anchor href=#%e4%ba%8c%e4%bb%a3%e7%a0%81%e5%ae%9e%e7%8e%b0>#</a>
+</h3>
+<p>按照 <code>tutorial</code> 中给出的例子继续实现，我们首先创建 <code>Source.m</code> 和 <code>Source.h</code> 两个文件作为我们提供接口和实现类的地方.</p>
+<p>
+<img src=https://mypicbank.oss-cn-beijing.aliyuncs.com/uPic/mosad_hw1_Source_m.png alt=Source_m></p>
+<p>参考文档中给出的头文件实现，考虑到类的封装性和数据隐秘性，将成员变量改写为私有成员，并添加了对私有成员进行操作的函数，如下：</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-objective-c data-lang=objective-c><span style=color:#66d9ef>@interface</span> <span style=color:#a6e22e>Clothes</span> : <span style=color:#a6e22e>NSObject</span>
+{
+    NSString <span style=color:#f92672>*</span> _color;
+    NSInteger _counter;             					<span style=color:#75715e>// 计数器，记录下衣物剩下冷却时间
+</span><span style=color:#75715e></span>}
+<span style=color:#66d9ef>@property</span> (<span style=color:#66d9ef>nonatomic</span>, <span style=color:#66d9ef>copy</span>)NSString <span style=color:#f92672>*</span> color;	<span style=color:#75715e>// 对 `_color` 变量的操作采用深拷贝形式
+</span><span style=color:#75715e></span>
+- (<span style=color:#66d9ef>void</span>)<span style=color:#a6e22e>setColor:</span> (NSString<span style=color:#f92672>*</span>) color;
+- (NSString<span style=color:#f92672>*</span>) <span style=color:#a6e22e>getColor</span>;
+- (NSInteger) <span style=color:#a6e22e>calCounter</span>;
+- (<span style=color:#66d9ef>void</span>) <span style=color:#a6e22e>setCounter</span>;													<span style=color:#75715e>// 置计数器为冷却时间
+</span><span style=color:#75715e></span>- (<span style=color:#66d9ef>void</span>) <span style=color:#a6e22e>reduceCounter</span>;												<span style=color:#75715e>// 计数器 -1
+</span><span style=color:#75715e></span>
+<span style=color:#66d9ef>@end</span>
+
+<span style=color:#66d9ef>@interface</span> <span style=color:#a6e22e>TopClothes</span>: <span style=color:#a6e22e>Clothes</span>
+
+<span style=color:#66d9ef>@end</span>
+
+<span style=color:#66d9ef>@interface</span> <span style=color:#a6e22e>Trousers</span>: <span style=color:#a6e22e>Clothes</span>
+
+<span style=color:#66d9ef>@end</span>
+</code></pre></div><p>在 <code>@implement</code> 中，应用了面向对象的多态特性，在定义 <code>setCounter</code> 时，将 <code>Clothes</code> 类中该函数定义为了无意义的虚函数，而在其两个子类中分别重写了该函数，如下：</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-objective-c data-lang=objective-c><span style=color:#75715e>// Clothes 类中的实现
+</span><span style=color:#75715e></span>- (<span style=color:#66d9ef>void</span>) <span style=color:#a6e22e>setCounter</span>
+{
+    <span style=color:#66d9ef>return</span>;
+}
+
+<span style=color:#75715e>// TopClothes 类中的实现
+</span><span style=color:#75715e></span>- (<span style=color:#66d9ef>void</span>) <span style=color:#a6e22e>setCounter</span>
+{
+    self<span style=color:#f92672>-&gt;</span>_counter <span style=color:#f92672>=</span> <span style=color:#ae81ff>2</span>;
+}
+
+<span style=color:#75715e>// Trousers 类中的实现
+</span><span style=color:#75715e></span>- (<span style=color:#66d9ef>void</span>) <span style=color:#a6e22e>setCounter</span>
+{
+    self<span style=color:#f92672>-&gt;</span>_counter <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>;
+}
+</code></pre></div><p>根据 <code>tutorial</code> 中的例子，我们将主要代码放在了 <code>ViewController.m</code> 中实现，经验证，将其放在 <code>main.m</code> 中实现，效果是相同的.</p>
+<p>在实现代码中，我学会了怎样新建对象并将其放入 <code>NSArray</code> 建立的数组中，学会了使用消息传递机制在方法之间传递消息，充分体验到了将 C 语言代码嵌入 OC 中编程的方便和快捷，对 OC 编程的认识更进一步. 由于实现代码稍长，为了节减篇幅，不贴在本报告中.</p>
+<h3 id=三结果输出>
+<strong>(三)、结果输出</strong>
+<a class=anchor href=#%e4%b8%89%e7%bb%93%e6%9e%9c%e8%be%93%e5%87%ba>#</a>
+</h3>
+<p>经测试，本程序具备实验要求的各种功能，得到如下输出 (其中之一)：</p>
+<pre tabindex=0><code>2021-09-27 17:08:03.235198+0800 HW1[53834:4004545] ZhangSan's Wardrobe!
+2021-09-27 17:08:03.235287+0800 HW1[53834:4004545] 
+2021-09-27 17:08:03.235412+0800 HW1[53834:4004545] Day 1
+2021-09-27 17:08:03.235491+0800 HW1[53834:4004545] TopClothes:	Reds	shirt
+2021-09-27 17:08:03.235556+0800 HW1[53834:4004545] Trousers:	Greens	jeans
+2021-09-27 17:08:03.235616+0800 HW1[53834:4004545] The score is: 0
+2021-09-27 17:08:03.235674+0800 HW1[53834:4004545] Day 2
+2021-09-27 17:08:03.235730+0800 HW1[53834:4004545] TopClothes:	Blacks	shirt
+2021-09-27 17:08:03.235793+0800 HW1[53834:4004545] Trousers:	Browns	jeans
+2021-09-27 17:08:03.235850+0800 HW1[53834:4004545] The score is: 19
+2021-09-27 17:08:03.236023+0800 HW1[53834:4004545] Day 3
+2021-09-27 17:08:03.236460+0800 HW1[53834:4004545] TopClothes:	Blues	shirt
+2021-09-27 17:08:03.237164+0800 HW1[53834:4004545] Trousers:	Browns	jeans
+2021-09-27 17:08:03.237793+0800 HW1[53834:4004545] The score is: 24
+2021-09-27 17:08:03.238044+0800 HW1[53834:4004545] Day 4
+2021-09-27 17:08:03.238217+0800 HW1[53834:4004545] TopClothes:	Reds	shirt
+2021-09-27 17:08:03.238383+0800 HW1[53834:4004545] Trousers:	Whites	jeans
+2021-09-27 17:08:03.238565+0800 HW1[53834:4004545] The score is: 25
+2021-09-27 17:08:03.238745+0800 HW1[53834:4004545] Day 5
+2021-09-27 17:08:03.238931+0800 HW1[53834:4004545] TopClothes:	Blacks	shirt
+2021-09-27 17:08:03.239115+0800 HW1[53834:4004545] Trousers:	Reds	jeans
+2021-09-27 17:08:03.239296+0800 HW1[53834:4004545] The score is: 17
+2021-09-27 17:08:03.239457+0800 HW1[53834:4004545] Day 6
+2021-09-27 17:08:03.239631+0800 HW1[53834:4004545] TopClothes:	Blues	shirt
+2021-09-27 17:08:03.239814+0800 HW1[53834:4004545] Trousers:	Greens	jeans
+2021-09-27 17:08:03.240010+0800 HW1[53834:4004545] The score is: 23
+2021-09-27 17:08:03.242287+0800 HW1[53834:4004545] Day 7
+2021-09-27 17:08:03.242371+0800 HW1[53834:4004545] TopClothes:	Blacks	shirt
+2021-09-27 17:08:03.242439+0800 HW1[53834:4004545] Trousers:	Whites	jeans
+2021-09-27 17:08:03.242501+0800 HW1[53834:4004545] The score is: 15
+2021-09-27 17:08:03.242543+0800 HW1[53834:4004545] 
+2021-09-27 17:08:03.242601+0800 HW1[53834:4004545] MAX SCORE is: 25
+2021-09-27 17:08:03.242686+0800 HW1[53834:4004545] Day 4
+2021-09-27 17:08:03.242911+0800 HW1[53834:4004545] TopClothes:	Reds	shirt
+2021-09-27 17:08:03.243121+0800 HW1[53834:4004545] Trousers:	Whites	jeans
+</code></pre><h2 id=四实验心得>
+<strong>四、实验心得</strong>
+<a class=anchor href=#%e5%9b%9b%e5%ae%9e%e9%aa%8c%e5%bf%83%e5%be%97>#</a>
+</h2>
+<p>总的来说本次实验让我对于 OC 编程有了一个初步的认识，接触到了了各种面向对象的特性同 C 语言相结合的奇妙体验，让我对于 OC 的认识更进了一步.</p>
+<p>期待在今后的学习中能够对 OC 编程与 iOS 开发有更加深入的了解.</p>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#现代操作系统应用开发-作业1><strong>现代操作系统应用开发 作业1</strong></a>
+<ul>
+<li>
+<ul>
+<li><a href=#姓名邵震东>姓名：邵震东</a></li>
+<li><a href=#学号19335172>学号：19335172</a></li>
+</ul>
+</li>
+<li><a href=#一安装配置-macos-和-xcode><strong>一、安装配置 macOS 和 Xcode</strong></a></li>
+<li><a href=#二熟悉-macos-按键操作><strong>二、熟悉 macOS 按键操作</strong></a></li>
+<li><a href=#三编译运行第一个-xcode-项目><strong>三、编译运行第一个 Xcode 项目</strong></a></li>
+<li><a href=#四实践项目><strong>四、实践项目</strong></a>
+<ul>
+<li><a href=#一设计建模><strong>(一)、设计建模</strong></a></li>
+<li><a href=#二代码实现><strong>(二)、代码实现</strong></a></li>
+<li><a href=#三结果输出><strong>(三)、结果输出</strong></a></li>
+</ul>
+</li>
+<li><a href=#四实验心得><strong>四、实验心得</strong></a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</aside>
+</main>
+</body>
+</html>
