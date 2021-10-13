@@ -56,7 +56,7 @@ Idmoniae ripis, at aves, ali missa adest, ut _et autem_, et ab? -->
 
 ### **一、笔记报告部分**
 
-*(暂无)*
+1. [现代操作系统应用开发 郑贵峰]({{< relref "/docs/reports/mosad/index" >}})
 
 ### **二、其他笔记**
 
