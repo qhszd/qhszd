@@ -23,7 +23,7 @@ headless: true
 
 - **👇目录 CONTENT👇**
 - 一、笔记报告部分
-  - [现代操作系统应用开发 郑贵峰]({{< relref "/docs/reports/mosad/index" >}})
+  - [现代操作系统应用开发 郑贵峰]({{< relref "/docs/reports/mosad/content" >}})
 - 二、其他笔记
 - 三、自己鼓捣的小玩意儿
   - [我的Blog搭建(一)]({{< relref "/docs/things/blog" >}})
