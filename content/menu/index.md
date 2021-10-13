@@ -26,4 +26,5 @@ headless: true
 - 二、其他笔记
 - 三、自己鼓捣的小玩意儿
   - [我的Blog搭建(一)]({{< relref "/docs/things/blog" >}})
+  - [快来白嫖一年的科学冲浪服务器(VPS)]({{< relref "/docs/things/vps" >}})
 - [关于小邵]({{< relref "/docs/about" >}})

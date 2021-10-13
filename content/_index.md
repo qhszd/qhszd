@@ -65,6 +65,7 @@ Idmoniae ripis, at aves, ali missa adest, ut _et autem_, et ab? -->
 ### **三、自己鼓捣的小玩意儿**
 
 1. [我的Blog搭建(一)]({{< relref "/docs/things/blog" >}})
+2. [快来白嫖一年的科学冲浪服务器(VPS)]({{< relref "/docs/things/vps" >}})
 
 ### **四、读者投稿**
 
@@ -78,6 +79,6 @@ Idmoniae ripis, at aves, ali missa adest, ut _et autem_, et ab? -->
 
 如果同志们有任何建议，或有希望本站更新的文章，或有想要投稿的同志，欢迎致信我的邮箱：
 
-<qhszd@protonmail.com>
+<qhszd@pm.me>
 
 我将非常乐于答复你的来信！

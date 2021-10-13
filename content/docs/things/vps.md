@@ -1,0 +1,314 @@
+# **快来白嫖一年的科学冲浪服务器(VPS)**
+
+一直在用的 GoogleHelper 最近要过期了，本来是想继续拉着舍友们一起续费的，想了一下，只能在支持扩展程序的浏览器上使用(比如Chrome、Microsoft Edge等)还是很不方便的，而且它也没有给出移动端搭梯的解决方案，探索了一下，找到了用VPS科学冲浪的办法。
+
+{{< hint warning >}}
+
+⚠️注意：如果希望享受学生白嫖优惠，你需要有一张安全的、开通了外币 (美元) 交易的、额度至少有 1 美🔪 (即人民币至少 7 元) 的信用卡，银联维萨万事达均可. 注册 DigitalOcean 会扣除 1 美元来验证账号，验证完毕后会退回卡中. (经测试，一些网站提供的美国虚拟预付费信用卡会封禁账号，无法使用)
+
+当然，如果没有信用卡可以用，你也可以选择使用 PayPal 充值 5 刀，被封号的风险也会比绑定银行卡小一些.
+
+如果你不差钱，可以直接购买其他服务器提供商如搬瓦工 (Bandwagon) 等的服务器使用. 
+
+另外，事实上在搭建的一些过程中是需要能够科学冲浪的，大家可以使用邮箱注册一个 GoogleHelper 账号，可以获得三天 (？不记得了，也可能是一天) 的体验期. 如果在任意一个环节遇到困难，请联系我. 
+
+{{< /hint >}}
+
+## **一、什么是VPS？什么又是V2Ray？**
+
+### **(一)、VPS**
+
+这一部分是虚拟专用服务器的简单介绍，如果你已经拥有了一台具有海外 IP 地址 (可以在国内 ping 通) 的 VPS 服务器，那么可以选择跳过，直接来到第四步. 
+
+VPS 可以理解为在一台服务器主机上安装了若干个虚拟机，每个虚拟机之间都是相互独立、互不影响的。实际上买一台 VPS 就是买一台云服务器。
+
+{{< details "VPS 简介" open >}}
+**虚拟专用服务器**（英语：Virtual Private Server），是将一台服务器分割成多个虚拟专用服务器的服务。实现 VPS 的技术分为容器技术和虚拟机技术。
+
+在容器或虚拟机中，每个 VPS 都可分配独立公网 IP 地址、独立操作系统、实现不同 VPS 间磁盘空间、内存、CPU 资源、进程和系统配置的隔离，为用户和应用程序模拟出“独占”使用计算资源的体验。
+
+VPS 可以像独立服务器一样，重装操作系统，安装程序，单独重启服务器。VPS 为用户提供了管理配置的自由，可用于企业虚拟化，也可以用于 IDC 资源租用。
+
+*[维基百科：虚拟专用服务器](https://zh.wikipedia.org/wiki/vps)*
+{{< /details >}}
+
+当然，如果我们要搭建科学上网工具，那么我们需要一台具有海外 IP (并且可以从国内访问的) 地址的 VPS，如果你在中大，并且服务器平台提供了不同选择，我们首先考虑位于香港、日本、韩国等周边国家的服务器，一般来讲连接延迟会比较低. 
+
+如果没有这些国家或地区的服务器，我们也可以购买位于美国西海岸的 VPS，尽量避免购买美国东海岸、加拿大、欧洲、印度等地的服务器，要从国内连接到这些地方的服务器都需要跋涉千山万水，延迟高到离谱. 
+
+![VPSLocation](https://mypicbank.oss-cn-beijing.aliyuncs.com/uPic/VPSLocation.png)
+
+先不要着急买，我把白嫖办法写在第二和第三步，各位可以看过以后再决定！
+
+### **(二)、V2Ray**
+
+了解过 VPS，还有一个重要概念就是 V2Ray 技术. 实际上一台搭建了 V2Ray 的服务器就是一个流量中转节点，由于可以建立和墙内的通讯，就可以把墙外网站的数据传回墙内，实现科学上网. 
+
+V2Ray 的部署其实比较简单，这些内容我放在了第四部分，希望进一步了解原理大家可以自行找找资料或参考下面的连接. 
+
+*[维基百科：V2Ray](https://zh.wikipedia.org/wiki/V2Ray)*
+
+## **二、GitHub Student Developer Pack**
+
+⚠️这一步需要一个有效的教育邮箱 (.edu邮箱)，如果你所在的学校没有提供，可以选择在某宝直接购买一个 Github 成品学生账号. 
+
+[GitHub Student Developer Pack](https://education.github.com/pack) (下文中简写为 GHSDP) 提供了我们在搭建上网工具过程中所需要的全部工具，包括在 DigitalOcean 的 100 美🔪信用余额兑换码和在 Name.com .me域名的一年免费使用. 
+
+我们假设你已经拥有了一个 GitHub 账号，进入[GHSDP](https://education.github.com/pack)页面，点击 `Get your pack` 按钮. 
+
+<img src="https://mypicbank.oss-cn-beijing.aliyuncs.com/uPic/GitHubStudentDeveloperPack.png" style="zoom:25%" />
+
+在打开的页面中选择 `Get student benefits`，
+
+<img src="https://mypicbank.oss-cn-beijing.aliyuncs.com/uPic/Benifits.png" style="zoom:30%" />
+
+如果你没有绑定自己的 edu 邮箱，点击 Add an email address 将你的邮箱添加到列表中，填写如下一个问卷，GitHub 会审核你的信息并确认发放属于你的 Student Benefits，一般来说都是秒批的. 
+
+<img src="https://mypicbank.oss-cn-beijing.aliyuncs.com/uPic/VPS_SchoolInformation_mosaic.png" style="zoom:30%" />
+
+申请成功后，我们打开 Pack 权益页面，就可以看到 DigitalOcean 卡片，点击就可以 get 到你的兑换码. 
+
+<img src="https://mypicbank.oss-cn-beijing.aliyuncs.com/uPic/VPS_GHSDPDigitalOcean.png" style="zoom:50%" />
+
+我们把它记下来，留到下一步使用. 
+
+## **三、在 DigitalOcean 注册账号、激活优惠码并创建 Droplets**
+
+打开 [DigitalOcean](https://digitalocean.com) 主页，注册一个账号，可以选择使用 GitHub 登陆，这一部分我们省略. 
+
+当你注册好账号之后应该就会出现下图的身份验证提示: 
+
+<img src="https://mypicbank.oss-cn-beijing.aliyuncs.com/uPic/VPS_DOVerify.png" style="zoom:30%" />
+
+绑定一张信用卡 (可以借用他人的卡片) 或者使用 PayPal 支付 5 美元，就可以等待 DigitalOcean 审核，审核成功后会向注册邮箱发送一封通知邮件，这样我们就可以进入 DO 的控制面板了. 
+
+<img src="https://mypicbank.oss-cn-beijing.aliyuncs.com/uPic/VPS_DOPanel_mosaic.png" style="zoom:30%" />
+
+首先，我们先来兑换 GHSDP 中得到的优惠码，在左侧边栏中选择 `Billing` 项目，下拉到下方就可以看到一个兑换框 (由于已经兑换过，兑换框消失，无法截图演示)，我们将优惠码输入进去兑换，完成后点击右上角的 USAGE，就可以看到 100 美🔪的信用余额. 
+
+<img src="https://mypicbank.oss-cn-beijing.aliyuncs.com/uPic/VPS_Billing.png" style="zoom:30%" />
+
+回到控制面板，第一个项目 (Project) 应该是 DO 自动帮我们创建好的，我们直接在这个项目中操作，在右上角 `Create` 下拉框中选择 `Droplets`，在打开的网页中就可以配置你的 VPS 了. 
+
+大家可以按照下图所示来进行，也可以根据自己的喜好来配置，这个没有特别的影响. 
+
+![VPS_CreateDroplets](https://mypicbank.oss-cn-beijing.aliyuncs.com/uPic/VPS_CreateDroplets.png)
+
+到这里，我们的 VPS 服务器就已经申请完毕了. 
+
+我们可以在控制面板看到你 Droplets 的 IP 地址. 
+
+![VPS_Droplets](https://mypicbank.oss-cn-beijing.aliyuncs.com/uPic/VPS_Droplets.png)
+
+## **四、兑换 (购买) 并配置域名**
+
+### **(一)、什么是 DNS 以及为何需要使用域名？**
+
+不知道在看这篇博客的各位是不是已经学过计算机网络这门课？如果你已经修读过该课程，应该对 DNS 这个概念不陌生. 
+
+在网络中，计算机只能按照例如 172.18.0.1 等这样 32 位 IPv4 (和 IPv6) 地址访问网络，那么我们平时使用到的如 github.com、google.com 等域名事实上就是使用了 DNS 服务器，客户端在发出 DNS 请求时，会首先访问当地的 DNS 服务器，如果该服务器没有查找到需要访问的域名，就按路径继续向上级 DNS 发出请求，直到找到有该域名解析记录的 DNS 服务器，由该服务器返回这条解析的记录值 (就是 IPv4 的地址)，我们的计算机在得到这条地址时才可以建立同网站的连接. 
+
+那么我们为什么需要使用域名呢？~~(其实我也不知道)~~ 
+
+我们使用任何一个网站一般都是使用域名访问，正常情况下不会存在直接使用 IPv4 地址访问的情况 (比如你上百度从来都是在地址栏输入 baidu.com，而不是 220.181.38.148)，那么如果你没有经过 DNS 查询，直接访问一个网络，并且这个 IP 地址又在境外，这不就明摆着告诉 GFW：我是科学冲浪家，快来查封我的 IP 吧！
+
+### **(二)、兑换 (购买) 并配置域名**
+
+所以，我们需要搞一个域名，这一步大家可以在任意一个网站上购买一个域名，阿里云腾讯云新用户都还蛮便宜的，.xyz 域名首年 1 元不是跟不花钱一样的 (旺柴)？当然如果在 DO 注册步骤里选择了绑定信用卡，并且希望将白嫖行动贯彻到底，你可以选择在 GHSDP 中找到 Name.com 提供的 .me 域名一年免费试用优惠. 有关如何使用该优惠，应该是比较简单的，大家可以自行摸索一下. 
+
+如果你选择了国内的域名提供商，最好可以将你的 DNS 解析在 [CloudFlare.com](https://www.cloudflare.com/zh-cn/)，据说全球将近一半的域名都托管在上面. 如果直接使用阿里云等提供商的 DNS 解析服务，IP 会有被查抄的可能. 
+
+注册登陆 CloudFlare，点击添加站点，根据信息提示操作，就可以将你的域名挂在 “全球最大的 CDN 服务商”，大名鼎鼎的 CloudFlare 上啦！
+
+![VPS_CloudFlareAdd](https://mypicbank.oss-cn-beijing.aliyuncs.com/uPic/VPS_CloudFlareAdd.png)
+
+这一部分直接按照 CloudFlare 网站的提示操作就可以了，如果大家在其过程中有什么问题可以直接询问我. ~~(主要是因为懒得写了)~~
+
+将域名托管在 CF 上，就可以添加解析记录了，点击 `添加记录` 按钮，类型选择 A 即可，第二栏中你可以自定义一个二级域名 (可以任选一个你想要的)，将你在第三步得到 VPS 的 IPv4 地址写在三栏，并将代理状态选择为取消. 点击保存，你就为你的服务器建立好了一个域名. 
+
+![VPS_CloudFlareDNS](https://mypicbank.oss-cn-beijing.aliyuncs.com/uPic/VPS_CloudFlareDNS.png)
+
+你可以尝试在终端命令行中测试你的 DNS：
+
+```bash
+% ping sanfrancisco.shaozhd.com
+
+PING sanfrancisco.shaozhd.com (172.18.0.1): 56 data bytes
+64 bytes from 172.18.0.1: icmp_seq=0 ttl=60 time=7.580 ms
+64 bytes from 172.18.0.1: icmp_seq=1 ttl=60 time=13.156 ms
+64 bytes from 172.18.0.1: icmp_seq=2 ttl=60 time=6.981 ms
+64 bytes from 172.18.0.1: icmp_seq=3 ttl=60 time=6.590 ms
+
+--- sanfrancisco.shaozhd.com ping statistics ---
+4 packets transmitted, 4 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 6.590/8.577/13.156/2.667 ms
+```
+
+{{< hint info >}}
+
+关于是否需要为你的域名申请证书这方面，有些文章认为是需要的，这样可以建立 HTTPS 加密连接，会让你的链接更加安全. 
+
+但我认为并没有特别的必要，HTTP 的连接也是不会引起怀疑的. 大家根据需要自行取舍，如果实在需要证书为你的 VPS 加密，你可以选择在 [FreeSSL](https://freessl.cn) 上免费申请一个. 
+
+{{< /hint >}}
+
+## **五、在 VPS 上使用脚本搭建 V2Ray 服务**
+
+如果你完成了前面若干步骤的操作并到达了这一步，那么恭喜你已经完成了这篇博客所有困难的部分，下面的两步将是十分简单的，咱们接着往下看. 
+
+这里我们使用 V2Ray 一键配置脚本搭建 V2Ray 服务. 本脚本系 v2xtls 整理，转载于 [v2raytech.com](https://v2raytech.com/v2ray-all-in-one-script-vless-tcp-xtls-support/) 和 [v2xtls.org](https://v2xtls.org/v2ray多合一脚本，支持vmesswebsockettlsnginx、vlesstcpxtls、vlesstcptls等组合/)，大家可以在这些网站里了解更多的科学冲浪信息. 
+
+打开命令行，输入命令
+
+```
+ssh root@example.yourhost.com
+```
+
+输入你在第三部设置的管理员密码，就可以通过命令行访问你的远程服务器. 
+
+你可以使用如下语句修改严苛要求下设置的密码：
+
+```
+# sudo passwd root
+
+// 根据以下提示修改密码. 
+New password: 
+Retype new password: 
+passwd: password updated successfully
+```
+
+输入部署脚本：
+
+```
+bash <(curl -sL https://s.hijk.art/v2ray.sh)
+```
+
+这一步它会给出若干选项，大家可以按照以下这个方法填写
+
+```
+#############################################################
+#                   v2ray一键安装脚本                      #
+# 作者: 网络跳越(hijk)                                      #
+# 网址: https://hijk.art                                    #
+# 论坛: https://hijk.club                                   #
+# TG群: https://t.me/hijkclub                               #
+# Youtube频道: https://youtube.com/channel/UCYTB--VsObzepVJtc9yvUxQ #
+#############################################################
+  1.   安装V2ray-VMESS
+  2.   安装V2ray-VMESS+mKCP
+  3.   安装V2ray-VMESS+TCP+TLS
+  4.   安装V2ray-VMESS+WS+TLS(推荐)
+  5.   安装V2ray-VLESS+mKCP
+  6.   安装V2ray-VLESS+TCP+TLS
+  7.   安装V2ray-VLESS+WS+TLS(可过cdn)
+  8.   安装V2ray-VLESS+TCP+XTLS(推荐)
+  9.   安装trojan(推荐)
+  10.  安装trojan+XTLS(推荐)
+ -------------
+  11.  更新V2ray
+  12.  卸载V2ray
+ -------------
+  13.  启动V2ray
+  14.  重启V2ray
+  15.  停止V2ray
+ -------------
+  16.  查看V2ray配置
+  17.  查看V2ray日志
+ -------------
+  0.   退出
+ 当前状态：未安装
+
+ 请选择操作[0-17]：4                            // 这里建议选择 4，当然你也可以根据喜好选择其他选项
+
+ V2ray一键脚本，运行之前请确认如下条件已经具备：
+  1. 一个伪装域名
+  2. 伪装域名DNS解析指向当前服务器ip（165.22.58.65）
+  3. 如果/root目录下有 v2ray.pem 和 v2ray.key 证书密钥文件，无需理会条件2
+ 
+ 确认满足按y，按其他退出脚本：y                   // 此处要填写 y 才能继续
+
+ 请输入伪装域名：sgp.shaozhd.com                // 输入你为服务器分配的域名
+ 伪装域名(host)：sgp.shaozhd.com
+
+ 请输入Nginx监听端口[100-65535的一个数字，默认443]：
+ Nginx端口：443                               // 建议使用 443，该端口是一个常用端口，不容易被注意到
+
+ 请输入伪装路径，以/开头(不懂请直接回车)：/vps      // 这里建议不要直接回车，可以自己定义一个名字并在前面加上 / 
+ ws路径：/vps
+
+ 请选择伪装站类型:                              // 可以直接回车，这个无所谓
+   1) 静态网站(位于/usr/share/nginx/html)
+   2) 小说站(随机选择)
+   3) 美女站(https://imeizi.me)
+   4) 高清壁纸站(https://bing.imeizi.me)
+   5) 自定义反代站点(需以http或者https开头)
+  请选择伪装网站类型[默认:高清壁纸站]
+ 伪装网站：https://bing.imeizi.me
+
+  是否允许搜索引擎爬取网站？[默认：不允许]
+    y)允许，会有更多ip请求网站，但会消耗一些流量，vps流量充足情况下推荐使用
+    n)不允许，爬虫不会访问网站，访问ip比较单一，但能节省vps流量
+  请选择：[y/n]n
+ 允许搜索引擎：n                                // 如果你的服务器流量比较充裕，可以选择接受
+
+ 是否安装BBR(默认安装)?[y/n]:
+ 安装BBR：y                                    // 这个直接安装
+
+```
+
+配置完成后，它会向我们反馈你的 V2Ray 配置信息：(这个 V2Ray 已经被我 Destroy 了，白嫖不到我哦)
+<img src="https://mypicbank.oss-cn-beijing.aliyuncs.com/uPic/5c4f8e2613314a729e88180f6efd78d1.png" style="zoom:5%" />
+
+```
+ BBR模块已启用
+ v2ray启动成功
+
+ V2ray运行状态：已安装 V2ray正在运行, Nginx正在运行
+ V2ray配置文件:  /etc/v2ray/config.json
+ V2ray配置信息：
+   协议:  VMess
+   IP(address):  165.22.58.65
+   端口(port)：443
+   id(uuid)：1535f9ba-0fce-425d-bbb3-155cb927c221
+   额外id(alterid)： 0
+   加密方式(security)： none
+   传输协议(network)： ws
+   伪装类型(type)：none
+   伪装域名/主机名(host)/SNI/peer名称：sgp.shaozhd.com
+   路径(path)：/vps
+   底层安全传输(tls)：TLS
+
+   vmess链接: vmess://eyAidiI6IjIiLCAicHMiOiIiLCAiYWRkIjoiMTY1LjIyLjU4LjY1IiwgInBvcnQiOiI0NDMiLCAiaWQiOiIxNTM1ZjliYS0wZmNlLTQyNWQtYmJiMy0xNTVjYjkyN2MyMjEiLCAiYWlkIjoiMCIsICJuZXQiOiJ3cyIsICJ0eXBlIjoibm9uZSIsICJob3N0Ijoic2dwLnNoYW96aGQuY29tIiwgInBhdGgiOiIvdnBzIiwgInRscyI6InRscyIgfQ==
+```
+
+那么我们所有的搭建工作就已经全部成功了，接下来我们只需要连接到服务器就可以. 
+
+## **六、配置 V2Ray 客户端连接 VPS**
+
+V2Ray 有许许多多各种各样的客户端，各种客户端之间也大同小异，这里我以 iOS 端的 Shadowrocket 为例，其余各种客户端同理. 
+
+我们按照上一步得到的 V2Ray 客户端信息填写 (有些客户端支持直接用 vmess 链接导入)，如下图，就可以连接了. 
+
+![VPS_Client](https://mypicbank.oss-cn-beijing.aliyuncs.com/uPic/VPS_Client.png)
+
+至此，我们从服务器申请、V2Ray 搭建到客户端使用，完整地将白嫖科学冲浪的方法展示给了大家. 
+
+本篇博客的主要内容到这里也就结束了，如果你有什么疑问，可以随时发邮件向我咨询，我将非常乐与解答你的问题. 
+
+## **七、注意事项**
+
+希望本文中的科学上网方法可以为你们的学习生活助一臂之力. 
+
+但需要注意的是不论从任何来源、采用任何方法所搭建的科学冲浪工具，都不得用于任何违法用途，在浏览国际内容时，应当遵守国家有关法律和行政法规，并严格执行[《计算机信息网络国际联网安全保护管理办法》](http://www.gov.cn/gongbao/content/2011/content_1860856.htm)所有条款 (尤其是第五条和第六条) 所规定的内容，遵守网络道德，为保护我国网络层面的国家主权、安全和领土完整贡献自己的力量. 
+
+---
+
+本篇博客的主要内容就结束了，如果觉得本文对你有帮助，何不将它分享给更多需要的同志呢？
+
+感谢各位同志的耐心阅读，如需转载请注明文章为 `小邵同学(shaozhd_SYSU)` 撰写，并给出本文链接. 
+
+如对文章内容有疑问或有任何建议，欢迎致信我的邮箱：
+
+<qhszd@pm.me>
+
+我将非常乐于答复你的来信！
